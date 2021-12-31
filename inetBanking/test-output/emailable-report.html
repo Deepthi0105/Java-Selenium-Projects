@@ -1,0 +1,193 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "https://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="https://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="8">inetBankingV1</th></tr>
+<tr><td><a href="#t0">BankingApp Test</a></td><td class="num">2</td><td class="num attn">1</td><td class="num">0</td><td class="num">0</td><td class="num">31,734</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">inetBankingV1</th></tr></tbody><tbody id="t0"><tr><th colspan="4">BankingApp Test &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">com.inetbanking.testcases.TC_EditCustomerTest_004</td><td><a href="#m0">initialize</a></td><td rowspan="1">1633475611908</td><td rowspan="1">2514</td></tr><tr><th colspan="4">BankingApp Test &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="1">com.inetbanking.testcases.TC_EditCustomerTest_004</td><td><a href="#m1">editCustomer</a></td><td rowspan="1">1633475614431</td><td rowspan="1">0</td></tr><tr><th colspan="4">BankingApp Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.inetbanking.testcases.TC_AddCustomerTest_003</td><td><a href="#m2">addNewCustomer</a></td><td rowspan="1">1633475595381</td><td rowspan="1">16524</td></tr><tr class="passedodd"><td rowspan="1">com.inetbanking.testcases.TC_LoginTest_001</td><td><a href="#m3">loginTest</a></td><td rowspan="1">1633475588324</td><td rowspan="1">704</td></tr></tbody>
+</table>
+<h2>BankingApp Test</h2><h3 id="m0">com.inetbanking.testcases.TC_EditCustomerTest_004#initialize</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>chrome</td></tr><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created
+from tab crashed
+  (Session info: chrome=94.0.4606.71)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-67GQROK&apos;, ip: &apos;10.0.0.169&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x005CB9D3+2472403]
+	Ordinal0 [0x00566961+2058593]
+	Ordinal0 [0x00472180+1057152]
+	Ordinal0 [0x00465558+1004888]
+	Ordinal0 [0x00465226+1004070]
+	Ordinal0 [0x0046496A+1001834]
+	Ordinal0 [0x00463AFD+998141]
+	Ordinal0 [0x00463DB6+998838]
+	Ordinal0 [0x004636A5+997029]
+	Ordinal0 [0x0046E3A4+1041316]
+	Ordinal0 [0x00463661+996961]
+	Ordinal0 [0x00464586+1000838]
+	Ordinal0 [0x00463AFD+998141]
+	Ordinal0 [0x00463DB6+998838]
+	Ordinal0 [0x004636A5+997029]
+	Ordinal0 [0x0046C37A+1033082]
+	Ordinal0 [0x00463661+996961]
+	Ordinal0 [0x00464586+1000838]
+	Ordinal0 [0x00463AFD+998141]
+	Ordinal0 [0x00463DB6+998838]
+	Ordinal0 [0x004636A5+997029]
+	Ordinal0 [0x0046A189+1024393]
+	Ordinal0 [0x00463661+996961]
+	Ordinal0 [0x00464586+1000838]
+	Ordinal0 [0x00463AFD+998141]
+	Ordinal0 [0x00463DB6+998838]
+	Ordinal0 [0x004636A5+997029]
+	Ordinal0 [0x004694AC+1021100]
+	Ordinal0 [0x00463661+996961]
+	Ordinal0 [0x00464586+1000838]
+	Ordinal0 [0x00463AFD+998141]
+	Ordinal0 [0x00463DB6+998838]
+	Ordinal0 [0x004636A5+997029]
+	Ordinal0 [0x0045F28D+979597]
+	Ordinal0 [0x00463661+996961]
+	Ordinal0 [0x00463400+996352]
+	Ordinal0 [0x00463199+995737]
+	Ordinal0 [0x004734D0+1062096]
+	Ordinal0 [0x004BA94A+1354058]
+	Ordinal0 [0x004B95EA+1349098]
+	Ordinal0 [0x004B545B+1332315]
+	Ordinal0 [0x00491FB4+1187764]
+	Ordinal0 [0x00492E09+1191433]
+	GetHandleVerifier [0x00753396+1551078]
+	GetHandleVerifier [0x007FD53A+2247818]
+	GetHandleVerifier [0x00657FBB+521995]
+	GetHandleVerifier [0x00657079+518089]
+	Ordinal0 [0x0056BD4D+2080077]
+	Ordinal0 [0x0056FC18+2096152]
+	Ordinal0 [0x0056FD52+2096466]
+	Ordinal0 [0x005794B1+2135217]
+	BaseThreadInitThunk [0x7677FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77357A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77357A6E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.inetbanking.testcases.BaseTest.initialize(BaseTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.inetbanking.testcases.TC_EditCustomerTest_004#editCustomer</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.SessionNotCreatedException: session not created
+from tab crashed
+  (Session info: chrome=94.0.4606.71)
+Build info: version: &apos;3.14.0&apos;, revision: &apos;aacccce0&apos;, time: &apos;2018-08-02T20:19:58.91Z&apos;
+System info: host: &apos;DESKTOP-67GQROK&apos;, ip: &apos;10.0.0.169&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;15.0.2&apos;
+Driver info: driver.version: ChromeDriver
+remote stacktrace: Backtrace:
+	Ordinal0 [0x005CB9D3+2472403]
+	Ordinal0 [0x00566961+2058593]
+	Ordinal0 [0x00472180+1057152]
+	Ordinal0 [0x00465558+1004888]
+	Ordinal0 [0x00465226+1004070]
+	Ordinal0 [0x0046496A+1001834]
+	Ordinal0 [0x00463AFD+998141]
+	Ordinal0 [0x00463DB6+998838]
+	Ordinal0 [0x004636A5+997029]
+	Ordinal0 [0x0046E3A4+1041316]
+	Ordinal0 [0x00463661+996961]
+	Ordinal0 [0x00464586+1000838]
+	Ordinal0 [0x00463AFD+998141]
+	Ordinal0 [0x00463DB6+998838]
+	Ordinal0 [0x004636A5+997029]
+	Ordinal0 [0x0046C37A+1033082]
+	Ordinal0 [0x00463661+996961]
+	Ordinal0 [0x00464586+1000838]
+	Ordinal0 [0x00463AFD+998141]
+	Ordinal0 [0x00463DB6+998838]
+	Ordinal0 [0x004636A5+997029]
+	Ordinal0 [0x0046A189+1024393]
+	Ordinal0 [0x00463661+996961]
+	Ordinal0 [0x00464586+1000838]
+	Ordinal0 [0x00463AFD+998141]
+	Ordinal0 [0x00463DB6+998838]
+	Ordinal0 [0x004636A5+997029]
+	Ordinal0 [0x004694AC+1021100]
+	Ordinal0 [0x00463661+996961]
+	Ordinal0 [0x00464586+1000838]
+	Ordinal0 [0x00463AFD+998141]
+	Ordinal0 [0x00463DB6+998838]
+	Ordinal0 [0x004636A5+997029]
+	Ordinal0 [0x0045F28D+979597]
+	Ordinal0 [0x00463661+996961]
+	Ordinal0 [0x00463400+996352]
+	Ordinal0 [0x00463199+995737]
+	Ordinal0 [0x004734D0+1062096]
+	Ordinal0 [0x004BA94A+1354058]
+	Ordinal0 [0x004B95EA+1349098]
+	Ordinal0 [0x004B545B+1332315]
+	Ordinal0 [0x00491FB4+1187764]
+	Ordinal0 [0x00492E09+1191433]
+	GetHandleVerifier [0x00753396+1551078]
+	GetHandleVerifier [0x007FD53A+2247818]
+	GetHandleVerifier [0x00657FBB+521995]
+	GetHandleVerifier [0x00657079+518089]
+	Ordinal0 [0x0056BD4D+2080077]
+	Ordinal0 [0x0056FC18+2096152]
+	Ordinal0 [0x0056FD52+2096466]
+	Ordinal0 [0x005794B1+2135217]
+	BaseThreadInitThunk [0x7677FA29+25]
+	RtlGetAppContainerNamedObjectPath [0x77357A9E+286]
+	RtlGetAppContainerNamedObjectPath [0x77357A6E+238]
+
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$new$0(W3CHandshakeResponse.java:57)
+	at org.openqa.selenium.remote.W3CHandshakeResponse.lambda$getResponseFunction$2(W3CHandshakeResponse.java:104)
+	at org.openqa.selenium.remote.ProtocolHandshake.lambda$createSession$0(ProtocolHandshake.java:122)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:195)
+	at java.base/java.util.Spliterators$ArraySpliterator.tryAdvance(Spliterators.java:958)
+	at java.base/java.util.stream.ReferencePipeline.forEachWithCancel(ReferencePipeline.java:127)
+	at java.base/java.util.stream.AbstractPipeline.copyIntoWithCancel(AbstractPipeline.java:502)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:488)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
+	at java.base/java.util.stream.FindOps$FindOp.evaluateSequential(FindOps.java:150)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.findFirst(ReferencePipeline.java:543)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:125)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:73)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:548)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:212)
+	at org.openqa.selenium.remote.RemoteWebDriver.&lt;init&gt;(RemoteWebDriver.java:130)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:181)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:168)
+	at org.openqa.selenium.chrome.ChromeDriver.&lt;init&gt;(ChromeDriver.java:123)
+	at com.inetbanking.testcases.BaseTest.initialize(BaseTest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 30 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.inetbanking.testcases.TC_AddCustomerTest_003#addNewCustomer</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.inetbanking.testcases.TC_LoginTest_001#loginTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
