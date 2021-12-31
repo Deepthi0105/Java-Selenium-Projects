@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+ <suite name="Suite" parallel="tests">
+<!-- <suite name="Suite" > -->
+
+<listeners>
+<listener class-name="pageobject.Listeners"/>
+</listeners>
+
+	<test thread-count="5" name="Login">
+		<classes>
+			<class name="tests.LoginPageTest" />
+		</classes>
+	</test>
+
+	<test name="Home">
+		<classes>
+			<class name="tests.HomePageTitleTest" />
+		</classes>
+	</test>
+
+	<test	name="Navigation Bar">
+		<classes>
+			<class name="tests.ValidateNavBarTest" />
+		</classes>
+
+	</test> <!-- Test -->
+</suite> <!-- Suite -->
