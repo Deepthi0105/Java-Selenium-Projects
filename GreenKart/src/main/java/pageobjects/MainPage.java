@@ -27,6 +27,7 @@ public class MainPage {
 	List<WebElement> addToCart;
 
 	public void addToCart() {
+		int j = 0;
 		for (int i = 0; i < listOfProducts.size(); i++) {
 			String[] productName = listOfProducts.get(i).getText().split("-");
 			String formattedName = productName[0].trim().toLowerCase();
@@ -34,7 +35,11 @@ public class MainPage {
 			List<String> itemsNeeded = Arrays.asList(veggiesNeeded);
 
 			if (itemsNeeded.contains(formattedName)) {
+				j++;
 				addToCart.get(i).click();
+			}
+			if (j == veggiesNeeded.length) {
+				break;
 			}
 
 		}
