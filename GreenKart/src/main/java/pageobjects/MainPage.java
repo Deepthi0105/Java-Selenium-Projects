@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,6 +14,8 @@ import org.openqa.selenium.support.PageFactory;
 public class MainPage {
 
 	WebDriver driver;
+	
+	public static Logger log=LogManager.getLogger(MainPage.class.getName());
 
 	public MainPage(WebDriver driver) {
 		this.driver = driver;
@@ -43,6 +47,7 @@ public class MainPage {
 			}
 
 		}
+		log.info("Items added to the cart");
 	}
 
 }

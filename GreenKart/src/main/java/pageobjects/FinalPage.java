@@ -2,6 +2,8 @@ package pageobjects;
 
 import java.time.Duration;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -14,7 +16,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class FinalPage {
 
 	WebDriver driver;
-
+	
+	public static Logger log=LogManager.getLogger(FinalPage.class.getName());
+	
 	public FinalPage(WebDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
@@ -43,6 +47,8 @@ public class FinalPage {
 
 	public void clickOnProceedBtn() {
 		onclickProceedBtn.click();
+		log.info("Order Placed");
 	}
+	
 
 }

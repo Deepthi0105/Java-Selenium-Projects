@@ -1,8 +1,9 @@
 package tests;
 
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
@@ -17,7 +18,7 @@ import utils.BaseClass;
 
 public class MainPageTest extends BaseClass {
 
-	WebDriver driver;
+	public WebDriver driver;
 
 	@BeforeTest
 
@@ -25,6 +26,7 @@ public class MainPageTest extends BaseClass {
 		driver = initialization();
 		driver.get(prop.getProperty("directurl"));
 		driver.manage().window().maximize();
+
 	}
 
 	@Test(priority = 1)

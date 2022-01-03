@@ -2,6 +2,8 @@ package pageobjects;
 
 import java.time.Duration;
 
+import org.apache.log4j.LogManager;
+import org.apache.log4j.Logger;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,6 +15,9 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class PromoCodePage {
 
 	WebDriver driver;
+	
+	public static Logger log=LogManager.getLogger(PromoCodePage.class.getName());
+	
 
 	public PromoCodePage(WebDriver driver) {
 		this.driver = driver;
@@ -49,6 +54,7 @@ public class PromoCodePage {
 
 	public void clickOnPlaceOrder() {
 		onclickPlaceOrder.click();
+		log.info("Order Placed");
 	}
 
 }
